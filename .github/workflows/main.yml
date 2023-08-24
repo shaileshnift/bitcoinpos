@@ -157,8 +157,8 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: lightyears-${{ github.sha }}-${{ matrix.name }}
+          name: bitcoinpos-${{ github.sha }}-${{ matrix.name }}
           path: |
-            depends/${{ matrix.host }}/bin/lightyears*
-            dist/Lightyears-Qt.app
+            depends/${{ matrix.host }}/bin/bitcoinpos*
+            dist/Bitcoinpos-Qt.app
             ${{ matrix.name }}-bench.csv
